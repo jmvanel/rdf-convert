@@ -1,0 +1,38 @@
+{
+"@context": {
+"@base": "https://presdecheznous.fr/annuaire#/fiche/acteur/",
+"id": "@id",
+
+   "geog": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "foaf":"http://xmlns.com/foaf/0.1/",
+   "xsd":"http://www.w3.org/2001/XMLSchema#",
+   "schema": "http://schema.org/",
+
+   "title" : "rdfs:label",
+   "description" : "rdfs:comment",
+   "descriptionMore": "dc:description",
+   "email": "foaf:mbox",
+   "telephone": "foaf:phone",
+   "website":  {
+     "@id": "foaf:homepage",
+     "@type": "@id"
+   },
+
+   "geo": {
+     "@id": "schema:geo",
+     "@type": "@id"
+   },
+   "latitude": "geog:lat",
+   "longitude": "geog:long",
+
+   "address": {
+     "@id": "schema:address",
+     "@type": "@id"
+   },
+    "streetAddress":"schema:streetAddress",
+    "addressLocality":"schema:addressLocality",
+    "postalCode":"schema:postalCode",
+    "addressCountry":"schema:addressCountry"
+ }
+ }
