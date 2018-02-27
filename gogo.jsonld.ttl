@@ -1,0 +1,25 @@
+@prefix geog: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+<file:/home/jmv/src/rdf-convert/wd40> dct:description "Additionnal Longer Description" ;
+	dct:subject <file:/home/jmv/src/rdf-convert/taxonomy/566> ;
+	schema:address _:b0 ;
+	schema:geo _:b1 ;
+	rdfs:comment "Short Description" ;
+	rdfs:label "GoGo Example" ;
+	foaf:homepage <https://example.fr> ;
+	foaf:mbox "example@gogocarto.fr" ;
+	foaf:phone "055452545" .
+
+_:b0 schema:addressCountry "FR" ;
+	schema:addressLocality "Chenay" ;
+	schema:postalCode "79120" ;
+	schema:streetAddress "5 rue Edmond Proust" .
+
+_:b1 geog:lat "4.63252E1"^^xsd:double ;
+	geog:long "-3.39E-2"^^xsd:double .
