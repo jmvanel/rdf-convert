@@ -9,6 +9,33 @@ JSON-LD for GoGoCarto JSON API, see https://pixelhumain.github.io/GoGoCartoJs/do
 We are waiting for implementation of feature nested-properties in JSON-LD 1.1 :
 https://json-ld.org/spec/latest/json-ld/#nested-properties
 
-### Running example
+### Getting the HTML page
 
-~/src/jsonld-java-tools/jsonldplayground --inputFile gogo.jsonld --process tordf --format turtle
+https://presdecheznous.fr/annuaire#/fiche/Solaris/Clz
+
+### Getting the JSON from API
+
+```shell
+wget --header='X-Requested-With: XMLHttpRequest' \
+  https://presdecheznous.fr/api/elements/Clz.jsonld
+```
+
+or
+
+```shell
+wget --header='X-Requested-With: XMLHttpRequest' \
+  --header='Accept: application/ld+json' \
+  https://presdecheznous.fr/api/elements/Clz
+```
+
+Add `--save-headers` to save HTTP headers.
+
+
+### Running JSON-LD parser on example
+
+```shell
+~/src/jsonld-java-tools/jsonldplayground \
+  --inputFile gogo.jsonld \
+  --process tordf \
+  --format turtle
+```
