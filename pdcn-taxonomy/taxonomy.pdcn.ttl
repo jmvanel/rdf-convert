@@ -1,0 +1,338 @@
+@prefix geog: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+
+_:b0 rdfs:label "Catégories Principales" ;
+	skos:narrower _:b1 , _:b36 , _:b59 , _:b74 , _:b86 , _:b100 , _:b117 , _:b125 .
+
+_:b1 rdfs:label "Alimentation & Agriculture" ;
+	skos:narrower _:b2 .
+
+_:b2 rdfs:label "Type" ;
+	skos:narrower _:b3 , _:b4 , _:b5 , _:b6 , _:b12 .
+
+_:b3 rdfs:label "Marché" .
+
+_:b4 rdfs:comment "Magasins spécialisés en agriculture bio, commerce équitable et produits fermiers" ;
+	rdfs:label "Épicerie & Supérette" .
+
+_:b5 rdfs:comment "Restaurants et artisans traiteurs" ;
+	rdfs:label "Restauration" .
+
+_:b6 rdfs:comment "Circuit presque court : un seul intermédiaire !" ;
+	rdfs:label "Point de Distribution" ;
+	skos:narrower _:b7 .
+
+_:b7 rdfs:label "Type" ;
+	skos:narrower _:b8 , _:b9 , _:b10 , _:b11 .
+
+_:b8 rdfs:comment "Point de distribution" ;
+	rdfs:label "Ruche qui dit oui" .
+
+_:b9 rdfs:label "Locavor" .
+
+_:b10 rdfs:label "Le court circuit" .
+
+_:b11 rdfs:label "Autre réseau" .
+
+_:b12 rdfs:comment "producteur, artisan, paniers" ;
+	rdfs:label "Circuits courts" ;
+	skos:narrower _:b13 , _:b16 .
+
+_:b13 rdfs:label "type" ;
+	skos:narrower _:b14 , _:b15 .
+
+_:b14 rdfs:comment "vente directe, produits bio/paysans" ;
+	rdfs:label "Producteur / Artisan" .
+
+_:b15 rdfs:comment "Association pour le maintien d'une agriculture paysanne" ;
+	rdfs:label "AMAP / Paniers" .
+
+_:b16 rdfs:label "Produits" ;
+	skos:narrower _:b17 , _:b18 , _:b19 , _:b20 , _:b26 , _:b27 , _:b28 , _:b29 , _:b30 , _:b31 , _:b32 , _:b33 , _:b34 , _:b35 .
+
+_:b17 rdfs:label "Légumes" .
+
+_:b18 rdfs:label "Fruits" .
+
+_:b19 rdfs:label "Produits laitiers" .
+
+_:b20 rdfs:label "Viande" ;
+	skos:narrower _:b21 .
+
+_:b21 rdfs:label "Sous Produits" ;
+	skos:narrower _:b22 , _:b23 , _:b24 , _:b25 .
+
+_:b22 rdfs:label "Agneau" .
+
+_:b23 rdfs:label "Boeuf" .
+
+_:b24 rdfs:label "Volaille" .
+
+_:b25 rdfs:label "Porc" .
+
+_:b26 rdfs:label "Miel" .
+
+_:b27 rdfs:label "Œufs" .
+
+_:b28 rdfs:label "Poisson" .
+
+_:b29 rdfs:comment "Lentilles, Pois chiches..." ;
+	rdfs:label "Légumineuses" .
+
+_:b30 rdfs:comment "Confitures, conserves..." ;
+	rdfs:label "Produits transformés" .
+
+_:b31 rdfs:label "Pain, farine" .
+
+_:b32 rdfs:comment "Colza, tournseol..." ;
+	rdfs:label "Huiles" .
+
+_:b33 rdfs:comment "alcools et jus" ;
+	rdfs:label "Boissons" .
+
+_:b34 rdfs:comment "Aromatiques et médicinales" ;
+	rdfs:label "Plantes" .
+
+_:b35 rdfs:label "Autre produit" .
+
+_:b36 rdfs:label "Habitat" ;
+	skos:narrower _:b37 .
+
+_:b37 rdfs:label "Catégories" ;
+	skos:narrower _:b38 , _:b39 , _:b40 , _:b52 , _:b58 .
+
+_:b38 rdfs:label "Matériaux" .
+
+_:b39 rdfs:comment "Lieu dédié au recyclage, à la réparation et la vente de ces produits" ;
+	rdfs:label "Ressourcerie" .
+
+_:b40 rdfs:label "Éco-construction" ;
+	skos:narrower _:b41 .
+
+_:b41 rdfs:label "compétences" ;
+	skos:narrower _:b42 , _:b43 , _:b44 , _:b45 , _:b46 , _:b47 , _:b48 , _:b49 , _:b50 , _:b51 .
+
+_:b42 rdfs:label "Charpente / Menuiserie" .
+
+_:b43 rdfs:label "Chauffage / Isolation" .
+
+_:b44 rdfs:label "Maconnerie" .
+
+_:b45 rdfs:label "Énergie renouvelable" .
+
+_:b46 rdfs:label "Mobilier" .
+
+_:b47 rdfs:label "Électricité" .
+
+_:b48 rdfs:label "Conseil énergétique" .
+
+_:b49 rdfs:label "Architecte" .
+
+_:b50 rdfs:label "Paysagiste / Déco" .
+
+_:b51 rdfs:label "Autre compétence" .
+
+_:b52 rdfs:comment "Jardinage écologique et solidaire (insertion)" ;
+	rdfs:label "Jardin" ;
+	skos:narrower _:b53 .
+
+_:b53 rdfs:label "catégories" ;
+	skos:narrower _:b54 , _:b55 , _:b56 , _:b57 .
+
+_:b54 rdfs:label "Jardin partagé" .
+
+_:b55 rdfs:comment "Zone de dépôt de graines et de libres échanges" ;
+	rdfs:label "Grainothèque" .
+
+_:b56 rdfs:label "Horticulture" .
+
+_:b57 rdfs:label "Compost collectif" .
+
+_:b58 rdfs:comment "Produits et services écologiques pour animaux" ;
+	rdfs:label "Animaux" .
+
+_:b59 rdfs:label "Éducation & Formation" ;
+	skos:narrower _:b60 .
+
+_:b60 rdfs:label "Types" ;
+	skos:narrower _:b61 , _:b67 , _:b73 .
+
+_:b61 rdfs:label "École" ;
+	skos:narrower _:b62 .
+
+_:b62 rdfs:label "niveau" ;
+	skos:narrower _:b63 , _:b64 , _:b65 , _:b66 .
+
+_:b63 rdfs:label "Maternelle" .
+
+_:b64 rdfs:label "Élementaire" .
+
+_:b65 rdfs:label "Collège" .
+
+_:b66 rdfs:label "Lycée" .
+
+_:b67 rdfs:comment "Sensibilisation grand public" ;
+	rdfs:label "Education Populaire" ;
+	skos:narrower _:b68 .
+
+_:b68 rdfs:label "Activités" ;
+	skos:narrower _:b69 , _:b70 , _:b71 , _:b72 .
+
+_:b69 rdfs:label "Animation" .
+
+_:b70 rdfs:label "Débats / Conférence" .
+
+_:b71 rdfs:label "Ateliers" .
+
+_:b72 rdfs:label "Autre activité éduc pop" .
+
+_:b73 rdfs:label "Formation" .
+
+_:b74 rdfs:label "Mobilité" ;
+	skos:narrower _:b75 , _:b80 .
+
+_:b75 rdfs:label "Services" ;
+	skos:narrower _:b76 , _:b77 , _:b78 , _:b79 .
+
+_:b76 rdfs:label "Atelier / Réparation" .
+
+_:b77 rdfs:label "Location / Partage" .
+
+_:b78 rdfs:label "Vente / Boutique" .
+
+_:b79 rdfs:label "Nettoyage" .
+
+_:b80 rdfs:label "Véhicules" ;
+	skos:narrower _:b81 , _:b82 , _:b83 , _:b84 , _:b85 .
+
+_:b81 rdfs:label "Vélo" .
+
+_:b82 rdfs:label "Moto" .
+
+_:b83 rdfs:label "Auto" .
+
+_:b84 rdfs:label "Bateau" .
+
+_:b85 rdfs:label "Autre" .
+
+_:b86 rdfs:label "Sortie & Culture" ;
+	skos:narrower _:b87 .
+
+_:b87 rdfs:label "catégories" ;
+	skos:narrower _:b88 , _:b93 .
+
+_:b88 rdfs:comment "bar,restaurant, parcs..." ;
+	rdfs:label "Lieu pour sortir" ;
+	skos:narrower _:b89 .
+
+_:b89 rdfs:label "Sorties" ;
+	skos:narrower _:b90 , _:b91 , _:b92 .
+
+_:b90 rdfs:label "Bar/Café" .
+
+_:b91 rdfs:comment "Visites en plein-air" ;
+	rdfs:label "Nature" .
+
+_:b92 rdfs:label "Autre lieu" .
+
+_:b93 rdfs:comment "cinéma, journal, expo..." ;
+	rdfs:label "Activité Artistique/Culturelle" ;
+	skos:narrower _:b94 .
+
+_:b94 rdfs:label "Art & Culture" ;
+	skos:narrower _:b95 , _:b96 , _:b97 , _:b98 , _:b99 .
+
+_:b95 rdfs:label "Cinéma" .
+
+_:b96 rdfs:label "Musique" .
+
+_:b97 rdfs:label "Théâtre" .
+
+_:b98 rdfs:label "Papier" .
+
+_:b99 rdfs:label "Expos" .
+
+_:b100 rdfs:comment "Fripperies, artisanat, soin du corps..." ;
+	rdfs:label "Vêtements / Beauté" ;
+	skos:narrower _:b101 .
+
+_:b101 rdfs:label "type" ;
+	skos:narrower _:b102 , _:b112 .
+
+_:b102 rdfs:label "Vetement / artisanat" ;
+	skos:narrower _:b103 .
+
+_:b103 rdfs:label "Vêtement / Artisanat" ;
+	skos:narrower _:b104 , _:b105 .
+
+_:b104 rdfs:comment "Points de collecte ou de vente de vêtements usagers" ;
+	rdfs:label "Fripperie" .
+
+_:b105 rdfs:label "Boutique / Artisanat" ;
+	skos:narrower _:b106 .
+
+_:b106 rdfs:label "Produits" ;
+	skos:narrower _:b107 , _:b108 , _:b109 , _:b110 , _:b111 .
+
+_:b107 rdfs:label "Vêtement" .
+
+_:b108 rdfs:label "Accessoire" .
+
+_:b109 rdfs:comment "Déco, art de la table" ;
+	rdfs:label "Décoration" .
+
+_:b110 rdfs:label "Cosmétique" .
+
+_:b111 rdfs:label "Autre artisanat" .
+
+_:b112 rdfs:label "Soin / beauté" ;
+	skos:narrower _:b113 .
+
+_:b113 rdfs:label "Soin / Beauté" ;
+	skos:narrower _:b114 , _:b115 , _:b116 .
+
+_:b114 rdfs:label "Pharmacie" .
+
+_:b115 rdfs:label "Coiffeur" .
+
+_:b116 rdfs:label "Institut Beauté" .
+
+_:b117 rdfs:label "Voyages" ;
+	skos:narrower _:b118 .
+
+_:b118 rdfs:label "Catégories" ;
+	skos:narrower _:b119 , _:b120 , _:b121 , _:b122 , _:b123 , _:b124 .
+
+_:b119 rdfs:label "Agence" .
+
+_:b120 rdfs:label "Camping" .
+
+_:b121 rdfs:label "Refuge" .
+
+_:b122 rdfs:label "Accueil à la Ferme" .
+
+_:b123 rdfs:label "Hôtel" .
+
+_:b124 rdfs:label "Gîte" .
+
+_:b125 rdfs:label "Économie / Échange" ;
+	skos:narrower _:b126 .
+
+_:b126 rdfs:label "Catégories" ;
+	skos:narrower _:b127 , _:b128 , _:b129 , _:b130 .
+
+_:b127 rdfs:label "Monnaie Locale" .
+
+_:b128 rdfs:comment "Système d'échange local, banque du temps..." ;
+	rdfs:label "S.E.L." .
+
+_:b129 rdfs:comment "Antennes locales ouvertes aux particuliers" ;
+	rdfs:label "Banque éthique" .
+
+_:b130 rdfs:label "Assurance" .

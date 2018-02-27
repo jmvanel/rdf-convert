@@ -1,0 +1,990 @@
+{
+  "@context": "taxonomy.context.jsonld",
+  "@graph" : {
+   "unexpandable" : true,
+   "name" : "Catégories Principales",
+   "options" : [
+      {
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "color" : "#00537E",
+                     "name" : "Marché",
+                     "softColor" : "#22698E",
+                     "id" : 533,
+                     "icon" : "icon-marche"
+                  },
+                  {
+                     "id" : 534,
+                     "textHelper" : "Magasins spécialisés en agriculture bio, commerce équitable et produits fermiers",
+                     "softColor" : "#864C26",
+                     "name" : "Épicerie & Supérette",
+                     "color" : "#7E3200",
+                     "icon" : "icon-epicerie"
+                  },
+                  {
+                     "icon" : "icon-restaurant",
+                     "name" : "Restauration",
+                     "textHelper" : "Restaurants et artisans traiteurs",
+                     "softColor" : "#138C8E",
+                     "id" : 535,
+                     "color" : "#009A9C"
+                  },
+                  {
+                     "icon" : "icon-distrib",
+                     "subcategories" : [
+                        {
+                           "displayCategoryName" : false,
+                           "options" : [
+                              {
+                                 "useIconForMarker" : false,
+                                 "color" : "#AB7100",
+                                 "useColorForMarker" : false,
+                                 "softColor" : "#9D7424",
+                                 "textHelper" : "Point de distribution",
+                                 "id" : 536,
+                                 "name" : "Ruche qui dit oui"
+                              },
+                              {
+                                 "color" : "#AB7100",
+                                 "useColorForMarker" : false,
+                                 "name" : "Locavor",
+                                 "softColor" : "#9D7424",
+                                 "id" : 646,
+                                 "useIconForMarker" : false
+                              },
+                              {
+                                 "color" : "#AB7100",
+                                 "useColorForMarker" : false,
+                                 "name" : "Le court circuit",
+                                 "softColor" : "#9D7424",
+                                 "id" : 651,
+                                 "useIconForMarker" : false
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "color" : "#AB7100",
+                                 "name" : "Autre réseau",
+                                 "softColor" : "#9D7424",
+                                 "id" : 652,
+                                 "useIconForMarker" : false
+                              }
+                           ],
+                           "name" : "Type"
+                        }
+                     ],
+                     "color" : "#AB7100",
+                     "textHelper" : "Circuit presque court : un seul intermédiaire !",
+                     "softColor" : "#9D7424",
+                     "id" : 642,
+                     "name" : "Point de Distribution"
+                  },
+                  {
+                     "displayOption" : false,
+                     "textHelper" : "producteur, artisan, paniers",
+                     "useIconForMarker" : false,
+                     "showExpanded" : true,
+                     "subcategories" : [
+                        {
+                           "options" : [
+                              {
+                                 "softColor" : "#A4307C",
+                                 "textHelper" : "vente directe, produits bio/paysans",
+                                 "id" : 538,
+                                 "name" : "Producteur / Artisan",
+                                 "color" : "#AB0061",
+                                 "useIconForMarker" : false
+                              },
+                              {
+                                 "useIconForMarker" : false,
+                                 "color" : "#8E36A5",
+                                 "textHelper" : "Association pour le maintien d'une agriculture paysanne",
+                                 "softColor" : "#7D398D",
+                                 "id" : 539,
+                                 "name" : "AMAP / Paniers"
+                              }
+                           ],
+                           "name" : "type",
+                           "displayCategoryName" : false
+                        },
+                        {
+                           "enableDescription" : true,
+                           "showExpanded" : false,
+                           "options" : [
+                              {
+                                 "id" : 540,
+                                 "name" : "Légumes",
+                                 "useColorForMarker" : false,
+                                 "icon" : "icon-legumes"
+                              },
+                              {
+                                 "icon" : "icon-fruits",
+                                 "useColorForMarker" : false,
+                                 "id" : 541,
+                                 "name" : "Fruits"
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "id" : 542,
+                                 "name" : "Produits laitiers",
+                                 "icon" : "icon-laitier",
+                                 "nameShort" : "Laitiers"
+                              },
+                              {
+                                 "icon" : "icon-viande",
+                                 "id" : 543,
+                                 "name" : "Viande",
+                                 "useColorForMarker" : false,
+                                 "subcategories" : [
+                                    {
+                                       "displayCategoryName" : false,
+                                       "enableDescription" : true,
+                                       "name" : "Sous Produits",
+                                       "options" : [
+                                          {
+                                             "id" : 544,
+                                             "name" : "Agneau",
+                                             "useColorForMarker" : false,
+                                             "useIconForMarker" : false,
+                                             "icon" : "icon-angle-right"
+                                          },
+                                          {
+                                             "useColorForMarker" : false,
+                                             "id" : 545,
+                                             "name" : "Boeuf",
+                                             "icon" : "icon-angle-right",
+                                             "useIconForMarker" : false
+                                          },
+                                          {
+                                             "id" : 546,
+                                             "name" : "Volaille",
+                                             "useColorForMarker" : false,
+                                             "useIconForMarker" : false,
+                                             "icon" : "icon-angle-right"
+                                          },
+                                          {
+                                             "useColorForMarker" : false,
+                                             "id" : 640,
+                                             "name" : "Porc",
+                                             "icon" : "icon-angle-right",
+                                             "useIconForMarker" : false
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "id" : 547,
+                                 "name" : "Miel",
+                                 "icon" : "icon-miel"
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "name" : "Œufs",
+                                 "id" : 548,
+                                 "icon" : "icon-oeufs"
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "name" : "Poisson",
+                                 "id" : 549,
+                                 "icon" : "icon-poisson"
+                              },
+                              {
+                                 "id" : 550,
+                                 "textHelper" : "Lentilles, Pois chiches...",
+                                 "name" : "Légumineuses",
+                                 "useColorForMarker" : false,
+                                 "icon" : "icon-legumineuses"
+                              },
+                              {
+                                 "nameShort" : "Transformés",
+                                 "icon" : "icon-transformes",
+                                 "textHelper" : "Confitures, conserves...",
+                                 "id" : 551,
+                                 "name" : "Produits transformés",
+                                 "useColorForMarker" : false
+                              },
+                              {
+                                 "id" : 552,
+                                 "name" : "Pain, farine",
+                                 "useColorForMarker" : false,
+                                 "nameShort" : "Pain/Farine",
+                                 "icon" : "icon-pain"
+                              },
+                              {
+                                 "textHelper" : "Colza, tournseol...",
+                                 "id" : 553,
+                                 "name" : "Huiles",
+                                 "useColorForMarker" : false,
+                                 "icon" : "icon-huile"
+                              },
+                              {
+                                 "icon" : "icon-boissons",
+                                 "useColorForMarker" : false,
+                                 "id" : 554,
+                                 "textHelper" : "alcools et jus",
+                                 "name" : "Boissons"
+                              },
+                              {
+                                 "icon" : "icon-plantes",
+                                 "id" : 555,
+                                 "textHelper" : "Aromatiques et médicinales",
+                                 "name" : "Plantes",
+                                 "useColorForMarker" : false
+                              },
+                              {
+                                 "icon" : "icon-autre",
+                                 "nameShort" : "Autre",
+                                 "useColorForMarker" : false,
+                                 "id" : 556,
+                                 "name" : "Autre produit"
+                              }
+                           ],
+                           "name" : "Produits"
+                        }
+                     ],
+                     "useColorForMarker" : false,
+                     "id" : 537,
+                     "name" : "Circuits courts",
+                     "icon" : "icon-angle-right"
+                  }
+               ],
+               "unexpandable" : true,
+               "name" : "Type"
+            }
+         ],
+         "color" : "#98A100",
+         "id" : 532,
+         "name" : "Alimentation & Agriculture",
+         "showOpenHours" : true,
+         "icon" : "icon-leaf-1",
+         "nameShort" : "Alimentation",
+         "softColor" : "#8C9221"
+      },
+      {
+         "icon" : "icon-home",
+         "softColor" : "#864c26",
+         "name" : "Habitat",
+         "id" : 557,
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "color" : "#7E3200",
+                     "id" : 558,
+                     "softColor" : "#864C26",
+                     "name" : "Matériaux",
+                     "icon" : "icon-materiaux"
+                  },
+                  {
+                     "color" : "#AB7100",
+                     "softColor" : "#9D7424",
+                     "textHelper" : "Lieu dédié au recyclage, à la réparation et la vente de ces produits",
+                     "name" : "Ressourcerie",
+                     "id" : 559,
+                     "icon" : "icon-ressourcerie"
+                  },
+                  {
+                     "icon" : "icon-construction",
+                     "color" : "#8E36A5",
+                     "subcategories" : [
+                        {
+                           "options" : [
+                              {
+                                 "icon" : "icon-charpentier",
+                                 "color" : "#009A9C",
+                                 "id" : 563,
+                                 "softColor" : "#138C8E",
+                                 "name" : "Charpente / Menuiserie"
+                              },
+                              {
+                                 "icon" : "icon-temperature-1",
+                                 "name" : "Chauffage / Isolation",
+                                 "softColor" : "#138C8E",
+                                 "id" : 564,
+                                 "color" : "#009A9C"
+                              },
+                              {
+                                 "color" : "#009A9C",
+                                 "id" : 565,
+                                 "softColor" : "#138C8E",
+                                 "name" : "Maconnerie",
+                                 "icon" : "icon-maconnerie"
+                              },
+                              {
+                                 "icon" : "icon-renouvelable-1",
+                                 "softColor" : "#138C8E",
+                                 "id" : 566,
+                                 "name" : "Énergie renouvelable",
+                                 "color" : "#009A9C"
+                              },
+                              {
+                                 "softColor" : "#138C8E",
+                                 "id" : 567,
+                                 "name" : "Mobilier",
+                                 "color" : "#009A9C",
+                                 "icon" : "icon-tool"
+                              },
+                              {
+                                 "icon" : "icon-electricite",
+                                 "color" : "#009A9C",
+                                 "softColor" : "#138C8E",
+                                 "id" : 568,
+                                 "name" : "Électricité"
+                              },
+                              {
+                                 "icon" : "icon-co2-1",
+                                 "softColor" : "#22698E",
+                                 "id" : 571,
+                                 "name" : "Conseil énergétique",
+                                 "color" : "#00537E"
+                              },
+                              {
+                                 "softColor" : "#22698E",
+                                 "id" : 572,
+                                 "name" : "Architecte",
+                                 "color" : "#00537E",
+                                 "icon" : "icon-architecte"
+                              },
+                              {
+                                 "icon" : "icon-design",
+                                 "color" : "#00537E",
+                                 "name" : "Paysagiste / Déco",
+                                 "softColor" : "#22698E",
+                                 "id" : 573
+                              },
+                              {
+                                 "name" : "Autre compétence",
+                                 "id" : 569,
+                                 "color" : "#00537E",
+                                 "nameShort" : "Autre",
+                                 "icon" : "icon-autre"
+                              }
+                           ],
+                           "name" : "compétences",
+                           "enableDescription" : true,
+                           "displayCategoryName" : false
+                        }
+                     ],
+                     "id" : 562,
+                     "softColor" : "#7D398D",
+                     "name" : "Éco-construction"
+                  },
+                  {
+                     "textHelper" : "Jardinage écologique et solidaire (insertion)",
+                     "softColor" : "#8C9221",
+                     "id" : 574,
+                     "name" : "Jardin",
+                     "color" : "#98A100",
+                     "subcategories" : [
+                        {
+                           "displayCategoryName" : false,
+                           "name" : "catégories",
+                           "options" : [
+                              {
+                                 "useColorForMarker" : false,
+                                 "color" : "#98A100",
+                                 "softColor" : "#8C9221",
+                                 "name" : "Jardin partagé",
+                                 "id" : 575,
+                                 "icon" : "icon-jaridnier"
+                              },
+                              {
+                                 "icon" : "icon-seeds",
+                                 "color" : "#98A100",
+                                 "useColorForMarker" : false,
+                                 "softColor" : "#8C9221",
+                                 "textHelper" : "Zone de dépôt de graines et de libres échanges",
+                                 "name" : "Grainothèque",
+                                 "id" : 576
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "color" : "#98A100",
+                                 "name" : "Horticulture",
+                                 "softColor" : "#8C9221",
+                                 "id" : 577,
+                                 "icon" : "icon-plants-1"
+                              },
+                              {
+                                 "icon" : "icon-recycle",
+                                 "useColorForMarker" : false,
+                                 "color" : "#98A100",
+                                 "id" : 645,
+                                 "softColor" : "#8C9221",
+                                 "name" : "Compost collectif"
+                              }
+                           ]
+                        }
+                     ],
+                     "useIconForMarker" : false
+                  },
+                  {
+                     "color" : "#AB0061",
+                     "softColor" : "#A4307C",
+                     "textHelper" : "Produits et services écologiques pour animaux",
+                     "name" : "Animaux",
+                     "id" : 561,
+                     "icon" : "icon-paw"
+                  }
+               ],
+               "unexpandable" : true,
+               "name" : "Catégories"
+            }
+         ],
+         "color" : "#7e3200"
+      },
+      {
+         "icon" : "icon-education-1",
+         "name" : "Éducation",
+         "nameShort" : "Éducation",
+         "color" : "#00537E",
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "id" : 579,
+                     "softColor" : "#9D7424",
+                     "name" : "École",
+                     "color" : "#AB7100",
+                     "subcategories" : [
+                        {
+                           "displayCategoryName" : false,
+                           "name" : "niveau",
+                           "options" : [
+                              {
+                                 "useIconForMarker" : false,
+                                 "icon" : "icon-angle-right",
+                                 "id" : 580,
+                                 "name" : "Maternelle",
+                                 "useColorForMarker" : false,
+                                 "color" : ""
+                              },
+                              {
+                                 "useColorForMarker" : false,
+                                 "id" : 581,
+                                 "name" : "Élementaire",
+                                 "icon" : "icon-angle-right",
+                                 "useIconForMarker" : false
+                              },
+                              {
+                                 "color" : "",
+                                 "useColorForMarker" : false,
+                                 "name" : "Collège",
+                                 "id" : 582,
+                                 "icon" : "icon-angle-right",
+                                 "useIconForMarker" : false
+                              },
+                              {
+                                 "name" : "Lycée",
+                                 "id" : 583,
+                                 "color" : "",
+                                 "useColorForMarker" : false,
+                                 "useIconForMarker" : false,
+                                 "icon" : "icon-angle-right"
+                              }
+                           ]
+                        }
+                     ],
+                     "icon" : "icon-school"
+                  },
+                  {
+                     "color" : "#7E3200",
+                     "subcategories" : [
+                        {
+                           "enableDescription" : true,
+                           "displayCategoryName" : false,
+                           "options" : [
+                              {
+                                 "softColor" : "#864c26",
+                                 "id" : 585,
+                                 "name" : "Animation",
+                                 "color" : "#7e3200",
+                                 "useColorForMarker" : false,
+                                 "icon" : "icon-echange-1"
+                              },
+                              {
+                                 "icon" : "icon-conf",
+                                 "useColorForMarker" : false,
+                                 "color" : "#7E3200",
+                                 "name" : "Débats / Conférence",
+                                 "softColor" : "#864C26",
+                                 "id" : 587
+                              },
+                              {
+                                 "icon" : "icon-atelier-1",
+                                 "name" : "Ateliers",
+                                 "softColor" : "#864c26",
+                                 "id" : 588,
+                                 "useColorForMarker" : false,
+                                 "color" : "#7e3200"
+                              },
+                              {
+                                 "nameShort" : "Autre",
+                                 "icon" : "icon-autre",
+                                 "id" : 589,
+                                 "softColor" : "#864C26",
+                                 "name" : "Autre activité éduc pop",
+                                 "useColorForMarker" : false,
+                                 "color" : "#7E3200"
+                              }
+                           ],
+                           "name" : "Activités"
+                        }
+                     ],
+                     "id" : 584,
+                     "name" : "Education Populaire",
+                     "textHelper" : "Sensibilisation grand public",
+                     "softColor" : "#864C26",
+                     "useIconForMarker" : false,
+                     "showExpanded" : true
+                  },
+                  {
+                     "icon" : "icon-formation-2",
+                     "useColorForMarker" : false,
+                     "color" : "#00537E",
+                     "softColor" : "#22698E",
+                     "name" : "Formation",
+                     "id" : 586
+                  }
+               ],
+               "unexpandable" : true,
+               "name" : "Types"
+            }
+         ],
+         "name" : "Éducation & Formation",
+         "softColor" : "#22698E",
+         "id" : 578
+      },
+      {
+         "icon" : "icon-mobilite-2",
+         "softColor" : "#138c8e",
+         "id" : 590,
+         "name" : "Mobilité",
+         "subcategories" : [
+            {
+               "name" : "Services",
+               "options" : [
+                  {
+                     "softColor" : "#138C8E",
+                     "name" : "Atelier / Réparation",
+                     "id" : 591,
+                     "color" : "#009A9C",
+                     "useIconForMarker" : false
+                  },
+                  {
+                     "color" : "#AB0061",
+                     "id" : 592,
+                     "softColor" : "#A4307C",
+                     "name" : "Location / Partage",
+                     "useIconForMarker" : false
+                  },
+                  {
+                     "useIconForMarker" : false,
+                     "id" : 593,
+                     "softColor" : "#7D398D",
+                     "name" : "Vente / Boutique",
+                     "color" : "#8E36A5"
+                  },
+                  {
+                     "name" : "Nettoyage",
+                     "softColor" : "#22698e",
+                     "id" : 594,
+                     "color" : "#00537e",
+                     "useIconForMarker" : false,
+                     "icon" : ""
+                  }
+               ]
+            },
+            {
+               "options" : [
+                  {
+                     "color" : "",
+                     "useColorForMarker" : false,
+                     "id" : 595,
+                     "name" : "Vélo",
+                     "icon" : "icon-bike"
+                  },
+                  {
+                     "useColorForMarker" : false,
+                     "color" : "",
+                     "id" : 596,
+                     "name" : "Moto",
+                     "icon" : "icon-moto"
+                  },
+                  {
+                     "icon" : "icon-car",
+                     "color" : "",
+                     "useColorForMarker" : false,
+                     "id" : 597,
+                     "name" : "Auto"
+                  },
+                  {
+                     "useColorForMarker" : false,
+                     "color" : "",
+                     "name" : "Bateau",
+                     "id" : 598,
+                     "icon" : "icon-boat"
+                  },
+                  {
+                     "id" : 599,
+                     "name" : "Autre",
+                     "color" : "",
+                     "useColorForMarker" : false,
+                     "icon" : "icon-skate"
+                  }
+               ],
+               "name" : "Véhicules"
+            }
+         ],
+         "color" : "#009a9c"
+      },
+      {
+         "nameShort" : "Sorties",
+         "icon" : "icon-coffee",
+         "id" : 600,
+         "softColor" : "#a4307c",
+         "name" : "Sortie & Culture",
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "color" : "",
+                     "subcategories" : [
+                        {
+                           "options" : [
+                              {
+                                 "softColor" : "#22698e",
+                                 "id" : 602,
+                                 "name" : "Bar/Café",
+                                 "color" : "#00537e",
+                                 "icon" : "icon-cafe"
+                              },
+                              {
+                                 "icon" : "icon-voyage-1",
+                                 "color" : "#98A100",
+                                 "textHelper" : "Visites en plein-air",
+                                 "softColor" : "#8C9221",
+                                 "id" : 604,
+                                 "name" : "Nature"
+                              },
+                              {
+                                 "icon" : "icon-autre",
+                                 "nameShort" : "Autre",
+                                 "color" : "#7E3200",
+                                 "softColor" : "#864C26",
+                                 "id" : 605,
+                                 "name" : "Autre lieu"
+                              }
+                           ],
+                           "name" : "Sorties"
+                        }
+                     ],
+                     "id" : 601,
+                     "name" : "Lieu pour sortir",
+                     "icon" : "",
+                     "displayOption" : false,
+                     "textHelper" : "bar,restaurant, parcs...",
+                     "showExpanded" : true
+                  },
+                  {
+                     "subcategories" : [
+                        {
+                           "options" : [
+                              {
+                                 "color" : "#ab0061",
+                                 "name" : "Cinéma",
+                                 "softColor" : "#a4307c",
+                                 "id" : 607,
+                                 "icon" : "icon-cinema"
+                              },
+                              {
+                                 "color" : "#ab0061",
+                                 "name" : "Musique",
+                                 "softColor" : "#a4307c",
+                                 "id" : 608,
+                                 "icon" : "icon-musique"
+                              },
+                              {
+                                 "color" : "#ab0061",
+                                 "name" : "Théâtre",
+                                 "softColor" : "#a4307c",
+                                 "id" : 609,
+                                 "icon" : "icon-theatre"
+                              },
+                              {
+                                 "color" : "#ab0061",
+                                 "id" : 610,
+                                 "softColor" : "#a4307c",
+                                 "name" : "Papier",
+                                 "icon" : "icon-paper"
+                              },
+                              {
+                                 "color" : "#ab0061",
+                                 "id" : 611,
+                                 "softColor" : "#a4307c",
+                                 "name" : "Expos",
+                                 "icon" : "icon-expo"
+                              }
+                           ],
+                           "name" : "Art & Culture"
+                        }
+                     ],
+                     "displayOption" : false,
+                     "id" : 606,
+                     "textHelper" : "cinéma, journal, expo...",
+                     "name" : "Activité Artistique/Culturelle",
+                     "showExpanded" : true,
+                     "nameShort" : "Activité Artistique / Culturelle"
+                  }
+               ],
+               "name" : "catégories",
+               "displayCategoryName" : false
+            }
+         ],
+         "color" : "#ab0061"
+      },
+      {
+         "softColor" : "#7D398D",
+         "textHelper" : "Fripperies, artisanat, soin du corps...",
+         "id" : 612,
+         "name" : "Vêtements & Beauté",
+         "color" : "#8E36A5",
+         "subcategories" : [
+            {
+               "name" : "type",
+               "options" : [
+                  {
+                     "displayOption" : false,
+                     "useColorForMarker" : false,
+                     "subcategories" : [
+                        {
+                           "options" : [
+                              {
+                                 "icon" : "icon-friperie-1",
+                                 "color" : "#7E3200",
+                                 "textHelper" : "Points de collecte ou de vente de vêtements usagers",
+                                 "softColor" : "#864C26",
+                                 "name" : "Fripperie",
+                                 "id" : 613
+                              },
+                              {
+                                 "useIconForMarker" : false,
+                                 "showExpanded" : true,
+                                 "softColor" : "#7D398D",
+                                 "name" : "Boutique / Artisanat",
+                                 "id" : 617,
+                                 "color" : "#8E36A5",
+                                 "subcategories" : [
+                                    {
+                                       "enableDescription" : true,
+                                       "displayCategoryName" : false,
+                                       "options" : [
+                                          {
+                                             "icon" : "icon-vetement-4",
+                                             "useColorForMarker" : false,
+                                             "color" : "#8e36a5",
+                                             "name" : "Vêtement",
+                                             "softColor" : "#7d398d",
+                                             "id" : 618
+                                          },
+                                          {
+                                             "name" : "Accessoire",
+                                             "softColor" : "#7d398d",
+                                             "id" : 619,
+                                             "color" : "#8e36a5",
+                                             "useColorForMarker" : false,
+                                             "icon" : "icon-accessoire-2"
+                                          },
+                                          {
+                                             "textHelper" : "Déco, art de la table",
+                                             "softColor" : "#7D398D",
+                                             "name" : "Décoration",
+                                             "id" : 620,
+                                             "color" : "#8E36A5",
+                                             "useColorForMarker" : false,
+                                             "icon" : "icon-decoration-2"
+                                          },
+                                          {
+                                             "name" : "Cosmétique",
+                                             "softColor" : "#7d398d",
+                                             "id" : 621,
+                                             "useColorForMarker" : false,
+                                             "color" : "#8e36a5",
+                                             "icon" : "icon-cosmetique"
+                                          },
+                                          {
+                                             "color" : "#8E36A5",
+                                             "name" : "Autre artisanat",
+                                             "softColor" : "#7D398D",
+                                             "id" : 629,
+                                             "icon" : "icon-autre",
+                                             "nameShort" : "Autre"
+                                          }
+                                       ],
+                                       "name" : "Produits"
+                                    }
+                                 ]
+                              }
+                           ],
+                           "name" : "Vêtement / Artisanat"
+                        }
+                     ],
+                     "id" : 647,
+                     "name" : "Vetement / artisanat",
+                     "useIconForMarker" : false,
+                     "showExpanded" : true
+                  },
+                  {
+                     "useIconForMarker" : false,
+                     "showExpanded" : true,
+                     "useColorForMarker" : false,
+                     "displayOption" : false,
+                     "subcategories" : [
+                        {
+                           "name" : "Soin / Beauté",
+                           "options" : [
+                              {
+                                 "icon" : "icon-pharmacie-1",
+                                 "id" : 614,
+                                 "softColor" : "#8C9221",
+                                 "name" : "Pharmacie",
+                                 "color" : "#98A100"
+                              },
+                              {
+                                 "id" : 615,
+                                 "softColor" : "#22698E",
+                                 "name" : "Coiffeur",
+                                 "color" : "#00537E",
+                                 "icon" : "icon-001-scissors-1"
+                              },
+                              {
+                                 "id" : 616,
+                                 "softColor" : "#A4307C",
+                                 "name" : "Institut Beauté",
+                                 "color" : "#AB0061",
+                                 "icon" : "icon-beaute"
+                              }
+                           ]
+                        }
+                     ],
+                     "name" : "Soin / beauté",
+                     "id" : 648
+                  }
+               ],
+               "displayCategoryName" : false
+            }
+         ],
+         "name" : "Vêtements / Beauté",
+         "nameShort" : "Vêtements / Beauté",
+         "icon" : "icon-vetement-4"
+      },
+      {
+         "id" : 622,
+         "name" : "Voyages",
+         "color" : "#1e8065",
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "softColor" : "#a4307c",
+                     "id" : 623,
+                     "name" : "Agence",
+                     "color" : "#ab0061",
+                     "icon" : "icon-tags"
+                  },
+                  {
+                     "icon" : "icon-camping",
+                     "name" : "Camping",
+                     "softColor" : "#8c9221",
+                     "id" : 624,
+                     "color" : "#98a100"
+                  },
+                  {
+                     "icon" : "icon-chalet",
+                     "color" : "#1e8065",
+                     "id" : 625,
+                     "name" : "Refuge"
+                  },
+                  {
+                     "name" : "Accueil à la Ferme",
+                     "softColor" : "#9D7424",
+                     "id" : 626,
+                     "color" : "#AB7100",
+                     "icon" : "icon-ferme-1"
+                  },
+                  {
+                     "color" : "#00537E",
+                     "softColor" : "#22698E",
+                     "name" : "Hôtel",
+                     "id" : 627,
+                     "icon" : "icon-hotel-1"
+                  },
+                  {
+                     "color" : "#009A9C",
+                     "name" : "Gîte",
+                     "softColor" : "#138C8E",
+                     "id" : 628,
+                     "icon" : "icon-gite"
+                  }
+               ],
+               "name" : "Catégories",
+               "unexpandable" : true
+            }
+         ],
+         "icon" : "icon-case"
+      },
+      {
+         "softColor" : "#9D7424",
+         "name" : "Systèmes d'échanges",
+         "id" : 630,
+         "color" : "#AB7100",
+         "subcategories" : [
+            {
+               "options" : [
+                  {
+                     "softColor" : "#138C8E",
+                     "name" : "Monnaie Locale",
+                     "id" : 649,
+                     "color" : "#009A9C",
+                     "icon" : "icon-euro"
+                  },
+                  {
+                     "icon" : "gogo-icon-partner-3",
+                     "textHelper" : "Système d'échange local, banque du temps...",
+                     "name" : "S.E.L.",
+                     "softColor" : "#22698E",
+                     "id" : 650,
+                     "color" : "#00537E"
+                  },
+                  {
+                     "color" : "#7E3200",
+                     "softColor" : "#864C26",
+                     "textHelper" : "Antennes locales ouvertes aux particuliers",
+                     "id" : 631,
+                     "name" : "Banque éthique",
+                     "icon" : "icon-euro"
+                  },
+                  {
+                     "softColor" : "#8C9221",
+                     "id" : 632,
+                     "name" : "Assurance",
+                     "displayOption" : false,
+                     "color" : "#98A100",
+                     "icon" : "icon-euro"
+                  }
+               ],
+               "name" : "Catégories",
+               "unexpandable" : true
+            }
+         ],
+         "name" : "Économie / Échange",
+         "nameShort" : "Économie / Échange",
+         "icon" : "icon-euro"
+      }
+   ]
+}
+}
