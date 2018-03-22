@@ -1,0 +1,26 @@
+{
+"title": "DAISEE",
+"@id": "daisee",
+"@type": "foaf:Project",
+"tags": ["dbpedia:Energy", "dbpedia:Blockchain", "Hardware"],
+"cover": "/img/daisee-cover.jpg",
+
+"thumbnail": "/img/daisee-thumbnail.png",
+"description": "Decentralized Autonomous Interconnected Systems for Energy Efficiency",
+
+"porteurs": ["Rieul_Techer", "Nicolas_Loubet"],
+
+"documentation": [ {
+  "@id": "https://hackpad.com/DAISEE-IsOE-Log-book-PUz5Rhc26pE",
+  "name": "Logbook" },
+  {
+  "@id": "https://hackpad.com/DAISEE-IsOE-Meetings-ldL8yFyYtyi",
+  "name": "Meetings"
+  } ],
+
+"competence": [ {
+  "description": "Développement et cryptographie pour coder smart contract blockchain.  Connaissance du language Solidity (similaire au C++) et en administration réseau.",
+    "name": "Développeur"
+} ]
+}
+

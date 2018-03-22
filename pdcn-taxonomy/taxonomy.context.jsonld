@@ -20,7 +20,15 @@
   "options" : {
      "@id": "skos:narrower",
      "@type": "@id"
-   }
+   },
+  "parent" : { 
+     "@id": "skos:broader",
+     "@type": "@id"
+   },
 
-}
+  "icon" : { 
+     "@id": "foaf:thumbnail",
+     "@type": "@id"
+   }
+  }
 }
