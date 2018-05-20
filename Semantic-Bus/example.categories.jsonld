@@ -1,0 +1,60 @@
+{
+  "@graph" : [ {
+    "@id" : "sfd:colibrisParis",
+    "@type" : "foaf:Organization",
+    "label" : {
+      "@language" : "fr",
+      "@value" : "colibris Paris"
+    },
+    "homepage" : "https://colibrisParis.fr"
+  }, {
+    "@id" : "sfd:colibrisParis_distribution_panier",
+    "@type" : "skos:Concept",
+    "publisher" : "sfd:colibrisParis",
+    "label" : {
+      "@language" : "fr",
+      "@value" : "distribution panier"
+    }
+  }, {
+    "@id" : "sfd:rucheQuiditOui",
+    "@type" : "foaf:Organization",
+    "label" : {
+      "@language" : "fr",
+      "@value" : "La ruche Qui dit Oui"
+    },
+    "homepage" : "https://laruchequiditoui.fr"
+  }, {
+    "@id" : "sfd:rucheQuiditOui_ann_colibrisParis",
+    "@type" : "oa:Annotation",
+    "hasBody" : "sfd:colibrisParis_distribution_panier",
+    "hasTarget" : "sfd:rucheQuiditOui"
+  } ],
+  "@context" : {
+    "hasBody" : {
+      "@id" : "http://www.w3.org/ns/oa#hasBody",
+      "@type" : "@id"
+    },
+    "hasTarget" : {
+      "@id" : "http://www.w3.org/ns/oa#hasTarget",
+      "@type" : "@id"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "sfd" : "http://semantic-forms.cc:9112/ldp/",
+    "oa" : "http://www.w3.org/ns/oa#",
+    "dct" : "http://purl.org/dc/terms/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  }
+}
+
