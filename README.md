@@ -37,5 +37,5 @@ Add `--save-headers` to save HTTP headers.
 ~/src/jsonld-java-tools/jsonldplayground \
   --inputFile gogo.jsonld \
   --process tordf \
-  --format turtle >  > gogo.jsonld.ttl
+  --format turtle >  gogo.jsonld.ttl
 ```
