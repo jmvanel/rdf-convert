@@ -1,6 +1,5 @@
 {
 "@context": {
-  "@version": 1.1,
 
   "geog": "http://www.w3.org/2003/01/geo/wgs84_pos#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -12,10 +11,7 @@
   "skos": "http://www.w3.org/2008/05/skos#",
   "owl": "http://www.w3.org/2002/07/owl#",
 
-  "concepts": {
-     "@id": "https://w3id.org/credentials#claim",
-      "@container": "@graph"
-    },
+
 
   "en" : {
       "@id": "http://openfoodfacts.org/rdf/en/",
@@ -23,6 +19,22 @@
     },
   "de" : {
       "@id":  "http://opdefoodfacts.org/rdf/de/",
+      "@type": "skos:Concept"
+    },
+  "fr" : {
+      "@id":  "http://opdefoodfacts.org/rdf/fr/",
+      "@type": "skos:Concept"
+    },
+  "es" : {
+      "@id":  "http://opdefoodfacts.org/rdf/es/",
+      "@type": "skos:Concept"
+    },
+  "it" : {
+      "@id":  "http://opdefoodfacts.org/rdf/it/",
+      "@type": "skos:Concept"
+    },
+  "ru" : {
+      "@id":  "http://opdefoodfacts.org/rdf/ru/",
       "@type": "skos:Concept"
     },
 
