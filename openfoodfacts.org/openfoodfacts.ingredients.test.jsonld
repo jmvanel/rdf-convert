@@ -1,0 +1,64 @@
+{
+  "@id": "off:root",
+  "@type": "off:Ingredients",
+  "name": "All OFF ingredients",
+  "off-ingredients":
+
+{
+  "haricots-lingots" : {
+      "name" : {
+         "fr" : "Haricots lingots"
+      }
+   },
+   "e-330" : {
+      "name" : {
+         "fr" : "E 330"
+      }
+   },
+   "fleurs-d-hibiscus" : {
+      "name" : {
+         "fr" : "Fleurs d'hibiscus"
+      }
+   },
+   "semoule-de-mais-precuite" : {
+      "name" : {
+         "fr" : "Semoule de maïs précuite"
+      },
+      "parents" : [
+         "en:cornmeal"
+      ]
+   }
+},
+
+
+"@context": {
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "foaf":"http://xmlns.com/foaf/0.1/",
+  "xsd":"http://www.w3.org/2001/XMLSchema#",
+  "schema": "http://schema.org/",
+  "dct": "http://purl.org/dc/terms/",
+  "dbpedia": "http://dbpedia.org/resource/",
+  "skos": "http://www.w3.org/2008/05/skos#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "off": "https://static.openfoodfacts.org/data/taxonomies/off-vocab.owl#",
+
+  "off-ingredients": {
+      "@id": "off:ingredients",
+      "@container": "@index"
+  },
+
+  "name" : {
+      "@id": "rdfs:label",
+      "@type": "xsd:string",
+      "@container": "@language"
+    },
+  "parents" : {
+      "@id": "skos:broader",
+      "@type": "skos:Concept"
+   },
+   "children" : {
+      "@id": "skos:narrower",
+      "@type": "skos:Concept"
+   }
+}
+}
