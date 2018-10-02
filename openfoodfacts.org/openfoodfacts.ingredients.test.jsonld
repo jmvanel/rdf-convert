@@ -54,7 +54,7 @@
       "@id": "rdfs:label",
       "@type": "xsd:string",
       "@container": "@language"
-    },
+  },
   "parents" : {
       "@id": "skos:broader",
       "@type": "skos:Concept"

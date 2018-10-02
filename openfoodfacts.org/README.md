@@ -23,6 +23,19 @@ Here is a test file that you can put in Development JON-LD playgroud (https://js
 
 [openfoodfacts.ingredients.test.jsonld](openfoodfacts.ingredients.test.jsonld)
 
+To use the @context, add this at beginning of ingredients.json:
+```json
+{
+  "@id": "off:root",
+  "@type": "off:Ingredients",
+  "name": "All OFF ingredients",
+  "@context":
+    "https://github.com/jmvanel/rdf-convert/raw/master/openfoodfacts.org/openfoodfacts.ingredients.context.jsonld",
+
+  "off-ingredients":
+```
+and a closing `}` at end of file of course.
+
 NOTES
 - this solution implies changing the nesting of the original ingredients.json by adding one level of nesting and a few lines at beginning
 - the declaration `"@container": "@id"` is essential to interpret each JSON block as triples, see https://w3c.github.io/json-ld-syntax/#node-identifier-indexing

@@ -1,5 +1,8 @@
 {
 "@context": {
+  "@version": 1.1,
+  "@base": "https://static.openfoodfacts.org/data/ingredients/",
+
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "foaf":"http://xmlns.com/foaf/0.1/",
   "xsd":"http://www.w3.org/2001/XMLSchema#",
@@ -12,14 +15,14 @@
 
   "off-ingredients": {
       "@id": "off:ingredients",
-      "@container": "@index"
+      "@container": "@id"
   },
 
   "name" : {
       "@id": "rdfs:label",
       "@type": "xsd:string",
       "@container": "@language"
-    },
+  },
   "parents" : {
       "@id": "skos:broader",
       "@type": "skos:Concept"
