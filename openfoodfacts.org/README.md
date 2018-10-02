@@ -24,19 +24,9 @@ Here is a test file that you can put in Development JON-LD playgroud (https://js
 [openfoodfacts.ingredients.test.jsonld](openfoodfacts.ingredients.test.jsonld)
 
 NOTES
-- the declaration `"@container": "@index"` is essential to interpret each JSON block as triples
-- currently it produces blank nodes, but we want to control URI produced
-
-Here is a message I sent to IRC #json-ld :
-
-```
-Wed May 16 01:51:29 2018
-<jmvanel> Hi !        "@container": "@id"   does not seem to be implemeted in development  playground , cf 
-<jmvanel>      https://json-ld.org/spec/latest/json-ld/#node-identifier-indexing
-<jmvanel> Correct ?
-<jmvanel> ( processor says :      @context @container value must be one of the following: @list, @set, @index, @language
-<jmvanel> Using instead        "@container": "@index"     creates blank nodes .
-```
+- this solution implies changing the nesting of the original ingredients.json by adding one level of nesting and a few lines at beginning
+- the declaration `"@container": "@id"` is essential to interpret each JSON block as triples, see https://w3c.github.io/json-ld-syntax/#node-identifier-indexing
+- to control URI produced, change the @base key
 
 ### Running JSON-LD parser on ingredients taxonomy
 The Java processor is not yet up-to-date with the latest JSON-LD spec.
