@@ -1,0 +1,27 @@
+#HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+
+\# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=1635
+
+PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement-ttl&id_article=>
+PREFIX sll-au: <http://www.linneenne-lyon.org/spip3/spip.php?page=auteur-ttl&id_auteur=>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sioc: <http://rdfs.org/sioc/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<BOUCLE_voir(ARTICLES)
+{id_secteur!=37}
+{par date}{inverse}>
+sll-ev:[(#ID_ARTICLE)]
+   a sioc:Post ;
+   rdfs:label """#TITRE"""@fr ; 
+   dct:date "[(#DATE|affdate{'c'})]"^^xsd:dateTime ;
+   <B_auteurs>dct:creator <BOUCLE_auteurs(AUTEURS){id_article}{", "}>sll-au:#ID_AUTEUR </BOUCLE_auteurs> ; </B_auteurs> <//B_auteurs>
+   rdfs:comment """[(#LESAUTEURS)]""" ;
+   dct:abstract """[(#INTRODUCTION)]"""@fr ;
+   sioc:content_encoded """#TEXTE"""@fr
+.
+
+</BOUCLE_voir>
+
