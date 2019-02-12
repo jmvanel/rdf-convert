@@ -1,0 +1,25 @@
+#HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+<B_auteur>
+
+PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement.ttl&id_auteur=>
+PREFIX sll-au: <http://www.linneenne-lyon.org/spip3/spip.php?page=auteur.ttl&id_auteur=>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sioc: <http://rdfs.org/sioc/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+<BOUCLE_auteur(AUTEURS)
+{id_auteur=#GET{id_auteur,0}}
+>
+sll-au:[(#ID_AUTEUR)]
+   a foaf:Person ;
+   rdfs:label """#NOM"""@fr ; 
+   rdfs:comment """#BIO"""@fr ; 
+   foaf:mbox "#EMAIL"
+.
+
+</BOUCLE_auteur>
+</B_auteur>
+

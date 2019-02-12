@@ -1,4 +1,5 @@
 #HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+<B_article>
 
 \# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=1635
 
@@ -10,7 +11,10 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sioc: <http://rdfs.org/sioc/ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<BOUCLE_voir(ARTICLES)
+#\ {id_article=#ENV{id_article,0}}
+
+<BOUCLE_article(ARTICLES)
+{id_article=#GET{id_article,0}}
 {id_secteur!=37}
 {par date}{inverse}>
 sll-ev:[(#ID_ARTICLE)]
@@ -23,5 +27,6 @@ sll-ev:[(#ID_ARTICLE)]
    sioc:content_encoded """#TEXTE"""@fr
 .
 
-</BOUCLE_voir>
+</BOUCLE_article>
+</B_article>
 
