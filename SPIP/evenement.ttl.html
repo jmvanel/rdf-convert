@@ -1,5 +1,7 @@
 #HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
 
+(#REM) cf  https://github.com/jmvanel/rdf-convert/blob/master/SPIP/evenement.ttl.html
+
 \# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=1635
 
 PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement.ttl&id_article=>
@@ -14,6 +16,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX form: <https://deductions.github.io/event.form.ttl#>
 
 <BOUCLE_evenements(ARTICLES)
+{id_article?}
 {id_secteur=37}
 {par date}{inverse}>
 sll-ev:[(#ID_ARTICLE)]
