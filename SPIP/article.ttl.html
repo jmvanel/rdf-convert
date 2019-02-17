@@ -1,7 +1,8 @@
 #HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+#HTTP_HEADER{Content-Disposition: attachment; filename="article-[(#ID_ARTICLE)].ttl"}
 <B_article>
 
-\# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=1635
+\# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=#ID_ARTICLE
 
 PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement.ttl&id_article=>
 PREFIX sll-au: <http://www.linneenne-lyon.org/spip3/spip.php?page=auteur.ttl&id_auteur=>
@@ -14,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 #\ {id_article=#ENV{id_article,0}}
 
 <BOUCLE_article(ARTICLES)
-{id_article=#GET{id_article,0}}
+{id_article?}
 {id_secteur!=37}
 {par date}{inverse}>
 sll-ev:[(#ID_ARTICLE)]

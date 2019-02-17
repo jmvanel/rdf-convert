@@ -1,4 +1,5 @@
 #HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+[(#HTTP_HEADER{Content-Disposition: attachment; filename="auteur-[(#ID_AUTEUR)].ttl"})]
 <B_auteur>
 
 PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement.ttl&id_auteur=>
@@ -11,7 +12,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 <BOUCLE_auteur(AUTEURS)
-{id_auteur=#GET{id_auteur,0}}
+{id_auteur?}
 >
 sll-au:[(#ID_AUTEUR)]
    a foaf:Person ;

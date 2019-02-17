@@ -1,8 +1,9 @@
 #HTTP_HEADER{Content-Type: text/turtle; charset=#CHARSET} 
+[(#HTTP_HEADER{Content-Disposition: attachment; filename="evenement-[(#ID_ARTICLE)].ttl"})]
 
-(#REM) cf  https://github.com/jmvanel/rdf-convert/blob/master/SPIP/evenement.ttl.html
+[(#REM cf https://github.com/jmvanel/rdf-convert/blob/master/SPIP/evenement.ttl.html)]
 
-\# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=1635
+\# http://www.linneenne-lyon.org/spip3/spip.php?page=evenement&id_article=#ID_ARTICLE 3
 
 PREFIX sll-ev: <http://www.linneenne-lyon.org/spip3/spip.php?page=evenement.ttl&id_article=>
 PREFIX sll-au: <http://www.linneenne-lyon.org/spip3/spip.php?page=auteur.ttl&id_auteur=>
