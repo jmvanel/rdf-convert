@@ -18,7 +18,8 @@ sll-au:[(#ID_AUTEUR)]
    a foaf:Person ;
    rdfs:label """#NOM"""@fr ; 
    rdfs:comment """#BIO"""@fr ; 
-   foaf:mbox "#EMAIL"
+   foaf:mbox <mailto:#EMAIL> ;
+   <http://www.w3.org/ns/org#memberOf> <#URL_SITE_SPIP>
 .
 
 </BOUCLE_auteur>

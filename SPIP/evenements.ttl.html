@@ -27,7 +27,8 @@ sll-ev:[(#ID_ARTICLE)]
    <B_auteurs>dct:creator <BOUCLE_auteurs(AUTEURS){id_article}{", "}>sll-au:#ID_AUTEUR </BOUCLE_auteurs> ; </B_auteurs> <//B_auteurs>
    rdfs:comment """[(#LESAUTEURS)]""" ;
    dct:abstract """[(#INTRODUCTION)]"""@fr ;
-   sioc:content_encoded """#TEXTE"""@fr
+   sioc:content_encoded """#TEXTE"""@fr ;
+   <http://purl.org/NET/c4dm/event.owl#agent> <#URL_SITE_SPIP>
 .
 
 </BOUCLE_evenements>
