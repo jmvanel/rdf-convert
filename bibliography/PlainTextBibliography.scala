@@ -41,20 +41,20 @@ object PlainTextBibliography {
   }
 
   def main(args:Array[String]): Unit = {
-  val filename = args(0)
-  val properties = Seq( "dc:title", "bibo:authorList", "dct:publisher", "bibo:reproducedIn", "url:doi", "dc:abstract", "dc:pdf", "rdfs:seeAlso")
-  for ( property <- properties ) { print( property + "\t" ) } ; println
-  for (line <- Source.fromFile(filename).getLines)  {
-    Console.err.println(line)
-    val parts = processLine(preProcess(line))
-    // create tab separated string // val tabSeparatedLine = parts . foldLeft("") ((accum, element) => s"$accum	$element") ; println(tabSeparatedLine)
-    val fieldsMap = processFields(parts)
+    val filename = args(0)
+    val properties = Seq( "dc:title", "bibo:authorList", "dct:publisher", "bibo:reproducedIn", "url:doi", "dc:abstract", "dc:pdf", "rdfs:seeAlso")
+    for ( property <- properties ) { print( property + "\t" ) } ; println
+    for (line <- Source.fromFile(filename).getLines)  {
+      Console.err.println(line)
+      val parts = processLine(preProcess(line))
+      // create tab separated string // val tabSeparatedLine = parts . foldLeft("") ((accum, element) => s"$accum	$element") ; println(tabSeparatedLine)
+      val fieldsMap = processFields(parts)
 
-    for ( property <- properties ) {
-      val value = fieldsMap.lift(property).getOrElse("")
-      print( value + "\t" )
+      for ( property <- properties ) {
+        val value = fieldsMap.lift(property).getOrElse("")
+        print( value + "\t" )
+      }
+      println
     }
-    println
   }
-}
 }
