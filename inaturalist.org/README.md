@@ -15,11 +15,11 @@ try { jsonLDtoRDF( inatdir + "observation.jmv.json" , inatdir + "inat.context.js
 observation.jmv.json comes from JSON API:
 
 ```
-diff -bw observations.jmv.json observation.jmv.json
+wget -O observation.jmv.json https://api.inaturalist.org/v1/observations/5414154
 ```
 
 Current issues
 
 - integer value for one id in the original JSON: not accepted by JSLD Playground nor by Titanium
-- problem with Titanium with "id" : "54141546"     at root lever (works with JSLD Playground)
+- problem with Titanium with "id" : "54141546"     at root level (works with JS-LD Playground)
 
