@@ -1,0 +1,26 @@
+{
+"@context": {
+  "results" : "@graph" ,
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#" ,
+  "dc" : "http://purl.org/dc/elements/1.1/" ,
+  "bioc": "http://deductions.github.io/biological-collections.owl.ttl#" ,
+
+  "@base" : "https://api.inaturalist.org/v1/observations/" ,  
+  "id": "@id",
+  
+  "description" : "rdfs:comment" ,
+  "identifications" : { "@id": "bioc:taxon", "@type": "@id" } ,
+
+  "user" : {
+    "@id": "foaf:maker",
+    "@type": "foaf:Person",
+    "@context": {
+      "created_at" : { "@id": "dc:date", "@type" : "xsd:dateTime" },
+      "name" : { "@id": "foaf:name" },
+      "icon" : { "@id": "foaf:image", "@type": "@id" } ,
+      "@base" : "https://www.inaturalist.org/users/" ,
+      "id" : "@id"
+    }
+  }
+} }
