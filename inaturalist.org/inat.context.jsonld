@@ -5,12 +5,17 @@
   "rdfs" : "http://www.w3.org/2000/01/rdf-schema#" ,
   "dc" : "http://purl.org/dc/elements/1.1/" ,
   "bioc": "http://deductions.github.io/biological-collections.owl.ttl#" ,
+  "wd" : "http://www.wikidata.org/entity/" ,
+
+  "@vocab": "https://api.inaturalist.org/v1/ontology.owl#",
 
   "@base" : "https://api.inaturalist.org/v1/observations/" ,  
   "id": "@id",
-  
+
   "description" : "rdfs:comment" ,
-  "identifications" : { "@id": "bioc:taxon", "@type": "@id" } ,
+  "identifications" : { "@id": "wd:P3151" , "@type" : "xsd:integer" },
+  "uri": "foaf:homepage",
+  "created_at" : { "@id": "dc:date", "@type" : "xsd:dateTime" },
 
   "user" : {
     "@id": "foaf:maker",
@@ -18,8 +23,8 @@
     "@context": {
       "created_at" : { "@id": "dc:date", "@type" : "xsd:dateTime" },
       "name" : { "@id": "foaf:name" },
-      "icon" : { "@id": "foaf:image", "@type": "@id" } ,
-      "@base" : "https://www.inaturalist.org/users/" ,
+      "icon_url" : { "@id": "foaf:img", "@type": "@id" } ,
+      "@base" : "https://api.inaturalist.org/v1/users/" ,
       "id" : "@id"
     }
   }
