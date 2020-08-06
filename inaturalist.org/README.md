@@ -48,5 +48,4 @@ wget -O observation.jmv.json https://api.inaturalist.org/v1/observations/5414154
 Current issues
 
 - integer value for several id in the original JSON: not accepted by JSLD Playground nor by Titanium
-- problem with Titanium with "id" : "54141546" is not kept at root level (works with JS-LD Playground)
 

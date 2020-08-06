@@ -12,12 +12,13 @@
   "@base" : "https://api.inaturalist.org/v1/observations/" ,  
   "id": "@id",
 
-  "@import" : "https://geojson.org/geojson-ld/geojson-context.jsonld",
-  "geojson": "geojson:geometry",
-  "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-  },
+  "geojson-prefix": "https://purl.org/geojson/vocab#",
+  "geojson": {
+   "@id":  "geojson-prefix:geometry",
+      "@context": {
+        "@import" : "https://geojson.org/geojson-ld/geojson-context.jsonld"
+      }
+   },
 
   "description" : "rdfs:comment" ,
   "identifications" : { "@id": "wd:P3151" , "@type" : "xsd:integer" },
