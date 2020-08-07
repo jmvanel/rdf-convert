@@ -21,11 +21,11 @@
     "dataset_name": "rdfs:label",
     "observers": { "@id": "foaf:maker", "@type": "@id",
       "@context": {
-    "id_organisme": { "@id": "http://www.w3.org/ns/org#memberOf", "@type": "@id" },
-    "@base": "http://demo.geonature.fr/geonature/api/organisation/",
-    "nom_role": "foaf:familyName",
-    "prenom_role": "foaf:givenName"
-       }    
+        "id_organisme": { "@id": "http://www.w3.org/ns/org#memberOf", "@type": "@id" },
+        "@base": "http://demo.geonature.fr/geonature/api/users/organisation/",
+        "nom_role": "foaf:familyName",
+        "prenom_role": "foaf:givenName"
+      }
     },
 
     "nom_cite": "rdfs:label",

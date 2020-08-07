@@ -73,7 +73,7 @@
       "meta_device_entry": "web",
       "observers": [
         {
-	  "@id": "http://demo.geonature.fr/geonature/api/person/1",
+	  "@id": "http://demo.geonature.fr/geonature/api/users/role/1",
 	  "@type": "foaf:Person",
           "id_organisme": "123",
           "id_role": 1,
