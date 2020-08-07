@@ -1,0 +1,37 @@
+{ "@context": {
+  "@vocab" : "https://geonature.fr/ontology.owl#",
+  "@base" : "https://geonature.fr/instance/data/",
+
+  "dwc": "http://rs.tdwg.org/dwc/terms/",
+  "nature": "http://deductions.github.io/nature_observation.owl.ttl#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#" ,
+  "dc" : "http://purl.org/dc/elements/1.1/" ,
+  "wd" : "http://www.wikidata.org/entity/" ,
+  "taxrefprop": "http://taxref.mnhn.fr/lod/property/",
+
+  "geojson": "https://purl.org/geojson/vocab#",
+  "geometry": {
+      "@context": {
+        "@import" : "https://geojson.org/geojson-ld/geojson-context.jsonld"
+      },
+      "@id":  "geojson:geometry", "@type": "@id"
+   },
+
+    "dataset_name": "rdfs:label",
+    "observers": { "@id": "foaf:maker", "@type": "@id",
+      "@context": {
+    "id_organisme": { "@id": "http://www.w3.org/ns/org#memberOf", "@type": "@id" },
+    "@base": "http://demo.geonature.fr/geonature/api/organisation/",
+    "nom_role": "foaf:familyName",
+    "prenom_role": "foaf:givenName"
+       }    
+    },
+
+    "nom_cite": "rdfs:label",
+
+    "taxref": "nature:taxon",
+    "nom_vern": "taxrefprop:vernacularName",
+    "lb_nom": "rdfs:label"
+}
+}

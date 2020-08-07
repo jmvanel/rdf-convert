@@ -1,0 +1,131 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///home/jmv/src/rdf-convert/geonature/occtax.nt
+        
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///home/jmv/src/rdf-convert/geonature/occtax.nt
+     @prefix : <https://geonature.fr/ontology.owl#> .
+    @prefix natu: <http://deductions.github.io/nature_observation.owl.ttl#> .
+    @prefix vocab: <https://purl.org/geojson/vocab#> .
+    
+    <http://demo.geonature.fr/geonature/api/occtax/releve/164>     a natu:Observation,
+                <http://rs.tdwg.org/dwc/terms/Identification>;
+         :id 164;
+         :properties  [
+             <http://xmlns.com/foaf/0.1/maker> <http://demo.geonature.fr/geonature/api/person/1>;
+             :altitude_max 137;
+             :altitude_min 137;
+             :dataset  [
+                 <http://www.w3.org/2000/01/rdf-schema#label> "Contact aléatoire tous règnes confondus";
+                 :active true;
+                 :bbox_east 6.85654e+00;
+                 :bbox_north 45.25e+00;
+                 :bbox_south 44.502e+00;
+                 :bbox_west 4.85695e+00;
+                 :dataset_desc "Observations aléatoires de la faune, de la flore ou de la fonge";
+                 :dataset_shortname "Contact aléatoire";
+                 :id_acquisition_framework 1;
+                 :id_dataset 1;
+                 :id_nomenclature_collecting_method 402;
+                 :id_nomenclature_data_origin 78;
+                 :id_nomenclature_data_type 325;
+                 :id_nomenclature_dataset_objectif 414;
+                 :id_nomenclature_resource_type 323;
+                 :id_nomenclature_source_status 75;
+                 :keywords "Aléatoire, hors protocole, faune, flore, fonge";
+                 :marine_domain false;
+                 :meta_create_date "2019-12-30T10:11:54.892824+00:00";
+                 :terrestrial_domain true;
+                 :unique_dataset_id "4d331cae-65e4-4948-b0b2-a11bc5bb46c2";
+                 :validable true ];
+             :date_max "2020-08-06T00:00:00";
+             :date_min "2020-08-06T00:00:00";
+             :digitiser  [
+                 :id_organisme -1;
+                 :id_role 1;
+                 :nom_complet "Administrateur test";
+                 :nom_role "Administrateur";
+                 :prenom_role "test" ];
+             :geom_4326  [
+                 :coordinates 4.37297753265e+00,
+                        48.3046738729e+00;
+                 :type "Point" ];
+             :id_dataset 1;
+             :id_digitiser 1;
+             :id_nomenclature_grp_typ 132;
+             :id_nomenclature_obs_technique 316;
+             :id_releve_occtax 164;
+             :meta_device_entry "web";
+             :t_occurrences_occtax  [
+                 natu:taxon <http://taxref.mnhn.fr/lod/taxon/60015/13.0>;
+                 <http://www.w3.org/2000/01/rdf-schema#label> "Hérisson d'Europe =   Erinaceus europaeus Linnaeus, 1758 - [ES - 60015]";
+                 :cd_nom 60015;
+                 :cor_counting_occtax  [
+                     :count_max 1;
+                     :count_min 1;
+                     :id_counting_occtax 236;
+                     :id_nomenclature_life_stage 3;
+                     :id_nomenclature_obj_count 146;
+                     :id_nomenclature_sex 165;
+                     :id_nomenclature_type_count 92;
+                     :unique_id_sinp_occtax "d9e9fc37-1981-45ca-a6b5-aa617c0917fb" ];
+                 :determiner "Administrateur test";
+                 :id_nomenclature_bio_condition 157;
+                 :id_nomenclature_bio_status 29;
+                 :id_nomenclature_blurring 175;
+                 :id_nomenclature_determination_method 463;
+                 :id_nomenclature_exist_proof 81;
+                 :id_nomenclature_naturalness 160;
+                 :id_nomenclature_obs_meth 41;
+                 :id_nomenclature_observation_status 88;
+                 :id_nomenclature_source_status 75;
+                 :id_occurrence_occtax 207;
+                 :id_releve_occtax 164;
+                 :meta_v_taxref "Taxref V11.0" ] ];
+         vocab:geometry  [
+             a vocab:Point;
+             vocab:coordinates  (
+            4.37297753265e+00
+            48.3046738729e+00 ) ] .
+    
+    <http://demo.geonature.fr/geonature/api/person/1>     a <http://xmlns.com/foaf/0.1/Person>;
+         <http://www.w3.org/ns/org#memberOf> <http://demo.geonature.fr/geonature/api/organisation/123>;
+         <http://xmlns.com/foaf/0.1/familyName> "Administrateur";
+         <http://xmlns.com/foaf/0.1/givenName> "test";
+         :id_role 1;
+         :nom_complet "Administrateur test" .
+    
+    <http://taxref.mnhn.fr/lod/taxon/60015/13.0>     a <http://dbpedia.org/ontology/Species>;
+         <http://taxref.mnhn.fr/lod/property/vernacularName> "Hérisson d'Europe";
+         <http://www.w3.org/2000/01/rdf-schema#label> "Erinaceus europaeus";
+         :cd_nom 60015;
+         :cd_ref 60015;
+         :cd_sup 192289;
+         :cd_taxsup 192289;
+         :classe "Mammalia";
+         :famille "Erinaceidae";
+         :group1_inpn "Chordés";
+         :group2_inpn "Mammifères";
+         :id_habitat 3;
+         :id_rang "ES";
+         :id_statut "P";
+         :lb_auteur "Linnaeus, 1758";
+         :nom_complet "Erinaceus europaeus Linnaeus, 1758";
+         :nom_complet_html "<i>Erinaceus europaeus</i> Linnaeus, 1758";
+         :nom_valide "Erinaceus europaeus Linnaeus, 1758";
+         :nom_vern_eng "West European Hedgehog";
+         :ordre "Erinaceomorpha";
+         :phylum "Chordata";
+         :regne "Animalia";
+         :url "https://inpn.mnhn.fr/espece/cd_nom/60015" .
+      [      :cruved  [
+                 :C true;
+                 :D true;
+                 :E true;
+                 :R true;
+                 :U true;
+                 :V true ];
+             :releve <http://demo.geonature.fr/geonature/api/occtax/releve/164> ].
+    
+#ENDS
