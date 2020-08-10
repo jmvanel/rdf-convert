@@ -32,6 +32,7 @@
 
     "taxref": "nature:taxon",
     "nom_vern": "taxrefprop:vernacularName",
-    "lb_nom": "rdfs:label"
+    "lb_nom": "rdfs:label",
+    "url": { "@type": "@id" }
 }
 }
