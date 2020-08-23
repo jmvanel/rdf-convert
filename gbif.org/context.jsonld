@@ -10,7 +10,7 @@
   "dc" : "http://purl.org/dc/elements/1.1/" ,
   "wd" : "http://www.wikidata.org/entity/" ,
   "gbifID": "@id",
-  "taxonID":{
+  "taxonKey":{
     "@context": {
       "@base" : "https://api.gbif.org/v1/species/"
     },

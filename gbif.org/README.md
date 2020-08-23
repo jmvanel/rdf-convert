@@ -6,6 +6,11 @@ https://en.wikipedia.org/wiki/Darwin_Core#Key_Projects_Using_Darwin_Core
 Darwin Core as a Vocabulary for Expressing Biodiversity Data as RDF
 Baskauf, Steven J. Sachs, Joel
 https://ir.vanderbilt.edu/handle/1803/9296
+Darwin Core-based
+terms for expressing biodiversity data as RDF. Semantic Web
+Journal 7:629-243. http://dx.doi.org/10.3233/SW-150203
+https://www.researchgate.net/publication/309026488_Darwin-SW_Darwin_Core-based_terms_for_expressing_biodiversity_data_as_RDF
+http://bioimages.vanderbilt.edu/pages/standards.htm
 
 **Data example**
 ```shell
