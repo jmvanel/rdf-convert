@@ -11,7 +11,7 @@
   "@vocab": "https://api.inaturalist.org/v1/ontology.owl#",
 
   "@base" : "https://api.inaturalist.org/v1/observations/" ,  
-  "id": "@id",
+  "uuid": "@id",
 
   "type": "nature:Observation",
 
@@ -36,7 +36,7 @@
       "name" : { "@id": "foaf:name" },
       "icon_url" : { "@id": "foaf:img", "@type": "@id" } ,
       "@base" : "https://api.inaturalist.org/v1/users/" ,
-      "id" : "@id"
+      "login" : "@id"
     }
   }
 } }
