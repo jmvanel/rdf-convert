@@ -14,6 +14,11 @@ Through semantic web technology (SPARQL queries), the goal is to reuse data from
   - find other naturalists
   - find observations based on taxonomy, etc
 
+# Test with with generic JSON-LD web service
+Running latest Titanium Json-Ld processor.
+
+http://semantic-forms.cc:1952/json2rdf?src=https://api.inaturalist.org/v1/observations/5414154&context=https://raw.githubusercontent.com/jmvanel/rdf-convert/master/inaturalist.org/inat.context.jsonld
+
 # Test with Titanium through Scala in REPL
 
 ```shell
@@ -53,8 +58,21 @@ try { jsonLDtoRDF( inatdir + "observation.jmv+context.json" ) } catch { case e: 
 wget -O observation.jmv.json https://api.inaturalist.org/v1/observations/5414154
 ```
 
-Current issues
+# Current issues
 
 - integer value for several id in the original JSON: not accepted by JSLD Playground nor by Titanium
-- issue in Titanium [triples with aliased @id and @base are missing at root level](https://github.com/filip26/titanium-json-ld/issues/61)
+
+An alternative is adding new JSON-LD `@id` keys in the current JSON, like this in /observations instance :
+
+  `"@id" : "5414154" ,`
+
+Also it will help to add this new JSON-LD `@id` key in /observations instances :
+  `"@type": [ "nature:Observation", "dwc:HumanOrservation" , "dwc:Occurrence" ] ,
+
+And this new JSON-LD `@id` key in /users instances :
+
+  `"@type": [ "foaf:Person", "schema:Person" ] ,
+
+Work n Progress ...
+
 
