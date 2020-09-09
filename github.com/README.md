@@ -25,5 +25,6 @@ http://localhost:9000/json2rdf?src=https://api.github.com/repos/jmvanel/semantic
 
 Or with
 
-http://semantic-forms.cc:1952/json2rdf?src=...
+http://semantic-forms.cc:1952/json2rdf?src=https://api.github.com/users/jmvanel&context=https://raw.githubusercontent.com/jmvanel/rdf-convert/master/github.com/context.jsonld
+http://semantic-forms.cc:1952/json2rdf?src=https://api.github.com/repos/jmvanel/semantic_forms&context=https://raw.githubusercontent.com/jmvanel/rdf-convert/master/github.com/context.jsonld
 
