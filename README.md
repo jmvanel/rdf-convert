@@ -3,7 +3,7 @@
 See [Semantization: different methods](https://github.com/jmvanel/semantic_forms/wiki/Semantization#different-methods)
 
 Most conversions in this project involve writing a specific JSON-LD `@context` .
-I made a generic JSON-LD web service based on Titamium Java processor:
+I made a generic JSON-LD web service based on Titanium Java processor:
 `http://semantic-forms.cc:1952/json2rdf?src=<JSON URL>&context=<context URL>`
 
 

@@ -11,7 +11,7 @@
   "@vocab": "https://github.com/jmvanel/rdf-convert/raw/master/github.com/github.owl.tll#",
 
   "description" : "dc:description" ,
-  "html_url": "foaf:homepage" ,
+  "html_url": { "@id": "foaf:homepage", "@type": "@id" } ,
   "type": { "@id": "rdfs:type" } ,
   "User": { "@id": "foaf:Person", "@type": "@id" } ,
   "avatar_url": { "@id": "foaf:img", "@type": "@id" } ,
@@ -19,6 +19,12 @@
   "name": { "@id": "foaf:name" } ,
   "owner": { "@id": "foaf:maker", "@type": "@id" } ,
   "created_at": { "@id": "dcterms:created" , "@type": "xsd:dateTime" },
+
+  "followers_url" : { "@type": "@id" },
+  "organizations_url" : { "@type": "@id" } ,
+  "received_events_url" : { "@type": "@id" } ,
+  "repos_url" : { "@type": "@id" } ,
+  "subscriptions_url" : { "@type": "@id" } ,
 
   "license": {
     "@context": {
