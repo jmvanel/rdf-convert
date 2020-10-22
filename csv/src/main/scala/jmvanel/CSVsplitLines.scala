@@ -2,13 +2,13 @@ import org.apache.commons.csv._
 import java.io._
 import collection.JavaConverters._
 
-/** splits Lines in CSV */
+/** splits Lines in CSV
+ *  How to adapt: change:
+ *  - idColumnName
+ *  - calls to removeRenameKeys */
 object CSVsplitLine extends App {
-/*
-  DEFAULT. // RFC4180. 
-  withDelimiter(';'). 
-  withQuote('"') . withRecordSeparator("\r\n") . withIgnoreEmptyLines(false) .
-*/
+  val idColumnName = "occurrenceId"
+
   val csvFormat = CSVFormat. 
     RFC4180. withFirstRecordAsHeader(). withIgnoreSurroundingSpaces()
   /*Reader*/ val in = new FileReader(args(0))
@@ -19,7 +19,6 @@ object CSVsplitLine extends App {
   var recordCount = 0
   var recordCountOutput = 0
   val printer = new CSVPrinter(new FileWriter("csv.txt"), CSVFormat.RFC4180) 
-
   System.err.println( "getHeaderNames() " + csvParser.getHeaderNames() )
   printer.printRecord( csvParser.getHeaderNames() )
   for( record <- records ) {
@@ -31,6 +30,7 @@ object CSVsplitLine extends App {
       badRecordCount = badRecordCount + 1
     }
     val scientificName = record.get("scientificName") ; System.err.println( scientificName )
+
     removeRenameKeys( key2value, Map(),
       List("eventDate2","verbatimLocality2", "eventDate3","verbatimLocality3", "eventDate4","verbatimLocality4"),
       printer )
@@ -52,10 +52,20 @@ object CSVsplitLine extends App {
 
   /** remove and Rename keys, and print Record 
    *  do not print record if keysToRename matches nothing */
-  def removeRenameKeys(key2value: scala.collection.Map[String, String],
+  def removeRenameKeys(key2value0: scala.collection.Map[String, String],
      keysToRename: Map[String,String],
      keysToRemove: List[String],
      printer: CSVPrinter ): Unit = {
+     val firstKeyTorename = keysToRename.keys.headOption.getOrElse("")
+     val originalRow = keysToRename . size == 0
+     val extraRow = key2value0 .getOrElse(firstKeyTorename, "") != ""
+
+     // create new key for new rows
+     val key2value = if( ! originalRow && extraRow ) {
+       key2value0 + (idColumnName ->
+         s"${key2value0.getOrElse(idColumnName,"")}-$firstKeyTorename")
+     } else key2value0
+
      val mapAfterRemoval = key2value -- keysToRemove
      val mapAfterRename =
        mapAfterRemoval . map {
@@ -65,9 +75,7 @@ object CSVsplitLine extends App {
      val headerNames = csvParser.getHeaderNames()
      val values = for ( headerName <- headerNames asScala ) yield
      mapAfterRename.getOrElse(headerName, "")
-     val firstKeyTorename = keysToRename.keys.headOption.getOrElse("")
-     if( keysToRename . size == 0 ||
-         key2value .getOrElse(firstKeyTorename, "") != "" ) {
+     if( originalRow || extraRow ) {
        printer.printRecord( values. toIterable asJava )
        recordCountOutput = recordCountOutput + 1
        }
