@@ -1,20 +1,51 @@
 { "@context": {
+  "dwc": "http://rs.tdwg.org/dwc/terms/" ,
   "@vocab" : "http://rs.tdwg.org/dwc/terms/",
-  "@base" : "https://api.gbif.org/v1/occurrence/",
+  "base" : "https://api.gbif.org/v1/" ,
 
   "dwc": "http://rs.tdwg.org/dwc/terms/",
   "dwciri": "http://rs.tdwg.org/dwc/iri/",
   "nature": "http://deductions.github.io/nature_observation.owl.ttl#",
   "foaf": "http://xmlns.com/foaf/0.1/",
   "rdfs" : "http://www.w3.org/2000/01/rdf-schema#" ,
+  "dct": "http://purl.org/dc/terms/",
   "dc" : "http://purl.org/dc/elements/1.1/" ,
   "wd" : "http://www.wikidata.org/entity/" ,
-  "gbifID": "@id",
-  "taxonKey":{
+  "dcat": "http://www.w3.org/ns/dcat#" ,
+
+  "gbifID___": "@id" ,
+  "key": "@id" ,
+
+  "ObjectProperty":
+  "urn:===========" ,
+
+  "taxonKey": {
     "@context": {
       "@base" : "https://api.gbif.org/v1/species/"
     },
     "@id": "dwciri:toTaxon", "@type": "@id"
-  }
+  } ,
+  "homepage": { "@id": "foaf:homepage" , "@type": "@id" } ,
+
+  "hostingOrganizationKey": {
+    "@context": {
+      "@base" : "../organization/" ,
+      "key": "null"
+    },
+    "@id": "dct:publisher" , "@type": "@id"
+  } ,
+
+  "type": { "@context": {
+      "@base" : "dwc" ,
+       "@base" : "http://rs.tdwg.org/dwc/terms/"
+    },
+    "@id": "rdf:type", "@type": "@id" } ,
+
+  "DatatypeProperty":
+  "urn:============" ,
+  "title": "rdfs:label",
+  "description": "dct:description" ,
+  "created": "dct:created" ,
+  "modified": "dct:cmodified"
 }
 }

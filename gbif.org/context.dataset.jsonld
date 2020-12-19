@@ -18,7 +18,8 @@
   "ObjectProperty":
   "urn:===========" ,
 
-  "homepage": "foaf:homepage" ,
+  "homepage": { "@id": "foaf:homepage" , "@type": "@id" } ,
+
   "contacts": {
     "@context": {
       "@base" : "contact" ,
