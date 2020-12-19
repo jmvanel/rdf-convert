@@ -1,0 +1,56 @@
+{ "@context": {
+  "base" : "https://api.gbif.org/v1/" ,
+
+  "dwc": "http://rs.tdwg.org/dwc/terms/",
+  "dwciri": "http://rs.tdwg.org/dwc/iri/",
+  "nature": "http://deductions.github.io/nature_observation.owl.ttl#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "rdfs" : "http://www.w3.org/2000/01/rdf-schema#" ,
+  "dct": "http://purl.org/dc/terms/",
+  "dc" : "http://purl.org/dc/elements/1.1/" ,
+  "wd" : "http://www.wikidata.org/entity/" ,
+  "dcat": "http://www.w3.org/ns/dcat#" ,
+  "org": "http://www.w3.org/ns/org#" ,
+  "bibo": "http://purl.org/ontology/bibo/" ,
+
+  "key": "@id" ,
+
+  "ObjectProperty":
+  "urn:===========" ,
+
+  "homepage": "foaf:homepage" ,
+  "contacts": {
+    "@context": {
+      "@base" : "contact" ,
+      "key": "null" 
+    },
+    "@id":  "dcat:contactPoint" , "@type": "@id"
+  } ,
+  "endpoints": {
+    "@context": {
+      "@base" : "distribution" ,
+      "key": "null" 
+    },
+    "@id": "dcat:distribution" , "@type": "@id"
+  } ,
+  "publishingOrganizationKey":  {
+    "@context": {
+      "@base" : "../organization/" ,
+      "key": "null" 
+    },
+    "@id": "dct:publisher" , "@type": "@id"
+  } ,
+  "createdBy": { "@id": "foaf:maker" , "@type": "@id" } ,
+
+  "organization": "org:memberOf",
+
+  "DatatypeProperty":
+  "urn:============" ,
+  "title": "rdfs:label",
+  "description": "dct:description" ,
+  "created": "dct:created" ,
+  "modified": "dct:cmodified" ,
+  "doi": "bibo:doi" ,
+  "keywordCollections" : "dcat:keyword"
+}
+}
