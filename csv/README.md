@@ -1,3 +1,6 @@
+
+## Running CSVsplitLines
+
 This code was used to create several CVS rows from a single one.
 It leverages on Apache Commons CSV library.
 The input file is a herbarium file with several specimens per row, up to 4 :
@@ -13,4 +16,9 @@ In output line 3 is split in 2:
 ```csv
 "0,0111-1",CRYPTOGAMES NON VASCULAIRES / MARCHANTIOPHYTA,MARCHANTIALES,MARCHANTIACEES,Marchantia polymorpha L.,,,Marchantie polymorphe.,2012-06-19,HTES-ALPES (05): > Briançon / bois des AYES (1800m),,,,,,
 "0,0111-2",CRYPTOGAMES NON VASCULAIRES / MARCHANTIOPHYTA,MARCHANTIALES,MARCHANTIACEES,Marchantia polymorpha L.,,,Marchantie polymorphe.,2003-07-06,ITALIE (It.): Dolomites / sentier Mt.Talm (1400m),,,,,,
+```
+
+## Running CSVfilterWithCSV
+```
+runMain jmvanel.CSVfilterWithCSV synthese_observations_2021-09-24T20_10_24.863Z.csv plantes_protégées_VAR.csv
 ```
